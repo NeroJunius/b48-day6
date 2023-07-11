@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300&display=swap');
+
+*{
+    font-family:'Poppins', sans-serif;
+}
+
+body, .a {
+    background-color: rgb(192, 191, 191);
+    margin: 0;
+}
+
+.ab {
+  text-decoration: none;
+  color: black;
+}
+
+/* project styling */
+form {
+    width: 350px;
+    margin: 50px auto;
+}
+
+form div {
+    margin-top: 10px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input, 
+select, 
+textarea {
+    width: 100%;
+    box-shadow: 2px 4px 8px 1px#636262;
+    background-color: #DBE4C6;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: none;
+    height: 200px;
+}
+ 
+.checkBox {
+    display: grid;
+    margin-top: 0px;
+    justify-content: start;
+    gap :1em 4em;
+    grid-template-columns: auto auto;
+    font-size: 4px; 
+  }
+  
+.nodeBox {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    cursor: pointer;
+  }
+
+.submitButton {
+  width: auto;
+  background-color: black;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 230px;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: white;
+  color:aqua;
+}
+
+/* project page */
+
+.listProject {
+  margin-top: 2em;
+  margin-bottom: 64px;
+  padding: 1em 2em;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+  justify-items: center;
+  max-width: fit-content;
+}
+
+.listProject img {
+  width: 16em;
+  height: 10em;
+  object-fit: cover;
+  border-radius: .4em;
+}
+
+.projectDetail .itemProject {
+    display: flex;
+    max-width:300px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 2px 4px 8px 1px#636262;
+    border: solid none;
+    border-radius: 10px;
+    box-shadow: #636262;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.projectDetail:hover {
+  transform: scale(1.03);
+}
+
+.itemProject .header .titleP {
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+
+    transition: color 0.314s ease-in-out;
+}
+
+.itemProject .header .titleP:hover {
+  color: aqua;
+}
+
+.itemProject .projectContent {
+  text-align: justify;
+  text-justify: inter-word;
+  max-height: min-content;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.btnGroups {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.btnGroups .btn {
+  width: 100px;
+  background-color: black;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .item-collapse {
+    display: none;
+  }
+
+  #barsmenu {
+    display: block;
+  }
+
+  form {
+    max-inline-size: 70%;
+  }
+
+  .listProject {
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    width: 43%;
+  }
+
+  .submitButton {
+    margin-left: 0%;
+    align-self: center;
+    width: 100%;
+  }
+}

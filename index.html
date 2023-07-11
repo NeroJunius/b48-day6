@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nafis's PAGE</title>
+    <link href="assets/navbar-dropdown.css" rel="stylesheet">
+    <link href="assets/index.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/Rhodes_Island.png">
+    <script src="https://kit.fontawesome.com/5140afd7e2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+     <nav>
+        <div class="nav-left">
+            <ul>
+                <img src="images/dumbways.png" alt="dumbways" >
+                <li class="item-collapse"><a class="active" href="index.html">Home</a></li>
+                <li class="item-collapse"><a href="project.html">My Project</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-right item-collapse">
+            <a href="contact-me.html">Contact Me!</a>
+        </div>
+
+        <div class="dropdown-nav" id="barsmenu">
+            <button onclick="openDropdown()">
+                <a href="#">
+                    <i class="fa-sharp fa-solid fa-bars"></i>
+                </a>
+            </button>
+        </div>
+    </nav>
+
+    <div class="dropdown-nav-container" id="dropdown-nav-container">
+        <a href="index.html" class="dropdown-active">Home</a>
+        <a href="project.html">My Projects</a>
+        <a href="contact-me.html">
+            <button type="button" class="dropdown-contact">Contact Me!</button>
+        <a>
+    </div>
+
+    <div id="container">
+        <div class="left">
+            <div class="content">
+                <div>
+                    <h1 style="font-size: 33px;">Hi! Welcome to MY PAGE!</h2>
+                    <p>
+                    An ordinary student, with a high willingness to learn and work, although a little slow in understanding. 
+                    I don't have an IT background, and this is my first time in the IT world, but I'm still eager to catch up with experienced colleagues. 
+                    But does not break the spirit for the future. Hope to be able to make parents happy, especially for my dad who is already calm in heaven
+                    </p>
+                </div>
+                <div class="item1">
+                    <a href="mailto:neroachmad002@gmail.com">
+                        <button type="button">Contact</button>
+                    </a>
+                    <a href="#" style="color: black;">
+                        Download CV
+                    </a> 
+                </div>
+            </div>
+            <div class="medsos">
+                <a href ="https://www.facebook.com/ifan.achmad.5">
+                    <span class="icon"><i class="fa-brands fa-facebook"></i></span> 
+                </a>
+                <a href="https://twitter.com/NeroAchmad?t=XOaQ-DKfJdp2HCT58iv8xw&s=09">
+                    <span class="icon"><i class="fa-brands fa-twitter"></i></span>  
+                </a>
+                <a href="https://instagram.com/nerojunius002?igshid=ZDdkNTZiNTM=">
+                    <span class="icon"><i class="fa-brands fa-instagram"></i></span>   
+                </a>
+            </div> 
+        </div>
+       
+        <div class="right">
+            <div class="card">
+                <img src="images/Dokutah.png" alt="Dokutah">
+                <h3>Nafiisan N. Achmad</h3>
+                <p>Fullstack Developer</p> 
+            </div>
+        </div>
+    </div>   
+</body>
+    <script src="assets/navbar-dropdown.js"></script>
+</html>

@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> project details </title>
+        <link href="assets/navbar-dropdown.css" rel="stylesheet">
+        <link href="assets/project-details.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="images/Rhodes_Island.png">
+        <script src="https://kit.fontawesome.com/5140afd7e2.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+      </head>
+
+    <body>
+
+      <nav>
+        <div class="nav-left">
+            <ul>
+                <img src="images/dumbways.png" alt="dumbways" >
+                <li class="item-collapse"><a class="active" href="index.html">Home</a></li>
+                <li class="item-collapse"><a href="project.html">My Project</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-right item-collapse">
+            <a href="contact-me.html">Contact Me!</a>
+        </div>
+
+        <div class="dropdown-nav" id="barsmenu">
+            <button onclick="openDropdown()">
+                <a href="#">
+                    <i class="fa-sharp fa-solid fa-bars"></i>
+                </a>
+            </button>
+        </div>
+    </nav>
+
+    <div class="dropdown-nav-container" id="dropdown-nav-container">
+      <a href="index.html">Home</a>
+      <a href="project.html">My Projects</a>
+      <a href="contact-me.html">
+        <button class="dropdown-contact">Contact Me!</button>
+      </a>
+    </div>
+
+        <div class="project">
+            <div class="projectDetails">
+              <div class="d-flex justify-content-center">
+                <div class="card mb-3" style="max-width: 700px;">
+                  <div class="row g-2">
+                    <div class="col-md-4">
+                      <img src="images/quotes.png" class="img-fluid rounded" alt="quotes">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Shigoto shigoto</h5>
+                        <div class="detailP">
+                          <i class="fa-duotone fa-calendar"></i> 
+                          <a>6 Months</a>
+                        </div>
+                        <p class="technologies">
+                          <a>Technologies</a>
+                          <i class="fa-brands fa-node-js"></i>
+                          <i class="fa-solid fa-n"></i>
+                          <i class="fa-brands fa-react"></i>
+                          <i class="fa-solid fa-scroll"></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis risus ut mi euismod sodales. Mauris id quam ut massa sodales faucibus consectetur sit amet dolor. Fusce lobortis velit lectus, et consequat arcu convallis at. Maecenas ac interdum tortor. 
+                  Sed rhoncus elementum magna non mollis. Fusce pellentesque ligula eu purus dignissim, in placerat tortor lacinia. Sed at luctus diam. Duis pulvinar quam sem, quis tempus felis euismod id.
+                </p>
+              </div>
+            </div>
+          </div>  
+        </div>
+    </body>
+    <script src="assets/navbar-dropdown.js"></script>
+</html>

@@ -1,0 +1,182 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Project Page</title>
+    <link href="assets/navbar-dropdown.css" rel="stylesheet">
+    <link href="assets/project.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/Rhodes_Island.png">
+    <script src="https://kit.fontawesome.com/5140afd7e2.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+
+  <body class="a">
+    <nav>
+      <div class="nav-left">
+          <ul>
+              <img src="images/dumbways.png" alt="dumbways" >
+              <li class="item-collapse"><a class="active" href="index.html">Home</a></li>
+              <li class="item-collapse"><a href="project.html">My Project</a></li>
+          </ul>
+      </div>
+
+      <div class="nav-right item-collapse">
+          <a href="contact-me.html">Contact Me!</a>
+      </div>
+
+      <div class="dropdown-nav" id="barsmenu">
+          <button onclick="openDropdown()">
+              <a href="#">
+                  <i class="fa-sharp fa-solid fa-bars"></i>
+              </a>
+          </button>
+      </div>
+  </nav>
+
+  <div class="dropdown-nav-container" id="dropdown-nav-container">
+    <a href="index.html">Home</a>
+    <a href="project.html" class="dropdown-active">My Projects</a>
+    <a href="contact-me.html">
+      <button class="dropdown-contact"> Contact Me!</button> 
+    </a>
+  </div>
+
+    <div class="blog">
+      <div class="blog-form">
+        <div class="form-container">
+          <form onsubmit="getBlog(event)">
+            <center><h1>Create Project Page</h1></center>
+            <div>
+              <label for="projectName">Project Name</label>
+              <input id="projectName" class="form-control" />
+            </div>
+
+            <div class="row">
+              <div class="col-6">
+                <label for="startDate">Start Date</label>
+                <input type="date" id="startDate" class="form-control" />
+              </div>
+              <div class="col-6">
+                <label for="endDate">End Date</label>
+                <input type="date" id="endDate" class="form-control"/>
+              </div>
+            </div>
+            
+            <div>
+              <label for="projectDescription">Description</label>
+              <textarea id="projectDescription" class="form-control"></textarea>
+            </div>
+
+            <div>
+              <label for="technologies">Technologies</label>
+            </div>
+              
+            <div class="checkBox">
+              <div>
+                <input id="nodeJS" class="nodeBox" type="checkbox">
+                <label for="nodeJS">Node Js</label>
+                <span class="checkmark"></span>
+              </div>
+              <div>
+                <input id="nextJS" class="nodeBox" type="checkbox">
+                <label for="nextJS">Next Js</labe>
+                <span class="checkmark"></span>
+              </div>
+              <div>
+                <input id="typeScript" class="nodeBox" type="checkbox">
+                <label for="typeScript">TypeScript</label>
+                <span class="checkmark"></span>
+              </div>  
+              <div>
+                <input id="reactJS" class="nodeBox" type="checkbox" >
+                <label for="reactJS">React Js</label>
+                <span class="checkmark"></span>
+              </div>
+            </div>   
+          
+            
+            <div>
+              <label>Upload Image</label>
+              <div class="inputImage">
+                <label for="imageProject">
+                  <input class="form-control" type="file" id="imageProject" name="filename">
+                </label> 
+              </div>
+            </div>
+
+            <div>
+              <button class="submitButton" onclick="formAlert()">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+    <hr class="line" />
+    <center><h1>My Project</h1></center>
+      <!-- dynamic content would be here -->
+    <div class="listProject" id="project">
+      <div class="projectDetail" >
+        <div class="itemProject">
+          <div class="header card border-0">
+            <img src="images/quotes.png" alt="quotes" class="img-card-top"/>
+              <a class="titleP" href="project-detail.html" target="_blank"
+              >Shigoto shigoto</a>
+            <div class="detailP">
+              1 Month 1 Day
+            </div>
+          </div>
+          <div class="projectContent">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis risus ut mi euismod sodales. Mauris id quam ut massa sodales faucibus consectetur sit amet dolor. Fusce lobortis velit lectus, et consequat arcu convallis at. Maecenas ac interdum tortor. 
+              Sed rhoncus elementum magna non mollis. Fusce pellentesque ligula eu purus dignissim, in placerat tortor lacinia. Sed at luctus diam. Duis pulvinar quam sem, quis tempus felis euismod id.
+            </p>
+          </div>
+          <p class="technologies">
+            <i class="fa-brands fa-node-js"></i>
+            <i class="fa-solid fa-n"></i>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-solid fa-scroll"></i>
+          </p>
+          <div class="btnGroups">
+              <button class="btn">Edit</button>
+              <button class="btn">Delete</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="projectDetail" >
+        <div class="itemProject">
+          <div class="header card border-0">
+            <img src="images/Dokutah.png" alt="Dokutah" class="img-card-top"/>
+              <a class="titleP" href="project-detail.html" target="_blank"
+              >RI's Landship
+              </a>
+            <div class="detailP">
+              6 Months 7 Days
+            </div>
+          </div>
+          <div class="projectContent">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis risus ut mi euismod sodales. Mauris id quam ut massa sodales faucibus consectetur sit amet dolor. Fusce lobortis velit lectus, et consequat arcu convallis at. Maecenas ac interdum tortor. 
+              Sed rhoncus elementum magna non mollis. Fusce pellentesque ligula eu purus dignissim, in placerat tortor lacinia. Sed at luctus diam. Duis pulvinar quam sem, quis tempus felis euismod id.
+            </p>
+          </div>
+          <p class="technologies">
+            <i class="fa-brands fa-node-js"></i>
+            <i class="fa-solid fa-n"></i>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-solid fa-scroll"></i>
+          </p>
+          <div class="btnGroups">
+              <button class="btn">Edit</button>
+              <button class="btn">Delete</button>
+          </div>
+        </div>
+      </div> 
+    </div>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="assets/navbar-dropdown.js"></script>
+    <script src="assets/project.js"></script>   
+</html>
+    
